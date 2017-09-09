@@ -61,7 +61,7 @@ l = [];
 for i = 1:length(start_codon)
     n = start_codon(i);
     m = n + 3;
-    stop_codon = ["TAA", "TGA", 'TAG'];
+    stop_codon = ['TAA', 'TGA', 'TAG'];
     if m + 2 < N
         while contains(stop_codon, char(rand_seq(m:m+2))) == 0
             m = m + 3;
